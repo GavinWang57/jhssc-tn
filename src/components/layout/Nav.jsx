@@ -12,7 +12,7 @@ function Nav() {
         {/* Logo 區 */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
-            src="/images/logo-nav.png"
+            src="images/logo-nav.png"
             alt="台南市生涯及技藝教育資源網"
             height="75"
             className="me-2"

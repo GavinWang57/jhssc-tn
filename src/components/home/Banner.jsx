@@ -4,7 +4,7 @@ const Banner = () => {
   return (
     <div className="banner">
       <img
-        src="/images/home/banner.png"
+        src="images/home/banner.png"
         alt="探索未來，掌握技職新藍圖 - 整合技職資源，點亮學生多元未來"
         className="banner-image img-fluid"
       />

@@ -1,4 +1,3 @@
-import { div } from "framer-motion/client";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -11,7 +10,7 @@ function Footer() {
           {/* Logo 與機關資訊 */}
           <div className="col-lg-2 mb-1">
             <img
-              src="/images/logo-nav.png"
+              src="images/logo-nav.png"
               alt="台南市生涯及技藝教育資源網"
               height="75"
               className="me-2"
