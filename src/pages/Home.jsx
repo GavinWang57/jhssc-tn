@@ -79,23 +79,21 @@ function Home() {
         <title>{SITE_NAME}</title>
       </Helmet>
 
-      <div className="container">
-        {/* banner */}
-        <section>
-          <Banner />
-        </section>
+      {/* banner */}
+      <section className="container">
+        <Banner />
+      </section>
 
-        {/* 快速連結卡片區 */}
-        <section id="quick-links-cards" className="py-5">
-          <div className="row g-4 justify-content-center">
-            {cardsData.map((card) => (
-              <div key={card.id} className="col-3">
-                <Card {...card} />
-              </div>
-            ))}
-          </div>
-        </section>
-      </div>
+      {/* 快速連結卡片區 */}
+      <section id="quick-links-cards" className="container px-4 px-md-0 py-5">
+        <div className="row g-3 g-md-4 justify-content-center">
+          {cardsData.map((card) => (
+            <div key={card.id} className="col-md-3">
+              <Card {...card} />
+            </div>
+          ))}
+        </div>
+      </section>
     </>
   );
 }

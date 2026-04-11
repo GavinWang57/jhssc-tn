@@ -19,6 +19,12 @@
   transition: all 0.3s ease;
   letter-spacing: 0.5px;
 
+  // 手機版取消 relative 定位
+  @media (max-width: 767px) {
+    position: static;
+    bottom: auto;
+  }
+
   &:hover {
     background: linear-gradient(135deg, #ff9d5c 0%, #ff7b45 100%);
     box-shadow: 0 6px 20px rgba(255, 107, 53, 0.5);

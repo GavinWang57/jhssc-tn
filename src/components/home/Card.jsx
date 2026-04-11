@@ -8,7 +8,7 @@ const Card = ({ icon, title, description, buttonText, link, color }) => {
       <div className="custom-card__top-bar"></div>
 
       {/* 白色主體內容區 */}
-      <div className="card-body bg-white custom-card__body">
+      <div className="card-body bg-white custom-card__body p-3">
         {/* 圖標容器 */}
         <div className="custom-card__icon">
           <img src={icon} alt={title} />

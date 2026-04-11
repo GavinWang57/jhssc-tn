@@ -14,7 +14,6 @@ function Nav() {
           <img
             src="images/logo-nav.png"
             alt="台南市生涯及技藝教育資源網"
-            height="75"
             className="me-2"
           />
           {/* <span className="fs-4 fw-bold text-neutral-100">

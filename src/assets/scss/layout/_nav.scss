@@ -1,3 +1,19 @@
+// Logo 響應式高度
+.navbar-brand img {
+  height: 50px; // 手機版高度
+  transition: height 0.3s ease;
+
+  // 平板以上 (≥768px)
+  @media (min-width: 768px) {
+    height: 65px;
+  }
+
+  // 桌機以上 (≥992px)
+  @media (min-width: 992px) {
+    height: 75px;
+  }
+}
+
 // 導航項目底線樣式 - 三種狀態：默認(透明)、hover(半透明)、active(完全不透明)
 
 // 新聞露出
