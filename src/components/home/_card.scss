@@ -1,0 +1,91 @@
+.custom-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  &__top-bar {
+    height: 8px;
+  }
+
+  &__body {
+    background-color: #ffffff;
+    border-radius: 18px 18px 0 0;
+    padding: 16px 16px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__icon {
+    margin-bottom: 16px;
+
+    img {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 8px;
+    flex-grow: 1;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff4500;
+      text-decoration: none;
+    }
+  }
+}
+
+// 卡片網格佈局 - 上排4個、下排3個
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+  justify-content: center;
+
+  // 平板設備 (768px - 1199px): 2列
+  @media (max-width: 1199px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  // 手機設備 (< 768px): 1列
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}

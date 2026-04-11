@@ -1,0 +1,17 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap";
+@import "../../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "./utils/modal";
+@import "./layout/nav";
+
+body {
+  background-color: rgba(251, 248, 239, 0.5); // #FBF8EF
+  background-image: url("/images/background.png");
+  background-blend-mode: overlay;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
