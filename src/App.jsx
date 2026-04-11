@@ -5,7 +5,7 @@ import AppRoutes from "./AppRoutes";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.PROD ? "/jhssc-tn/" : "/"}>
       <div className="d-flex flex-column min-vh-100">
         <Nav />
         <main className="flex-grow-1">
