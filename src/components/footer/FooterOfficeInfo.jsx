@@ -1,7 +1,7 @@
 function FooterOfficeInfo() {
   return (
     <>
-      <h5 className="fw-bold mb-3">台南市政府教育局</h5>
+      <h5 className="fw-bold mb-3">臺南市政府教育局</h5>
       <p className="text-neutral-100">
         <i className="bi bi-geo-alt-fill me-2"></i>
         708201臺南市永華路二段6號7樓

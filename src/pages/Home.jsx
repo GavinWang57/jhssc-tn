@@ -3,7 +3,7 @@ import "../assets/scss/pages/_home.scss";
 import Banner from "../components/home/Banner";
 import Card from "../components/home/Card";
 
-const SITE_NAME = "台南市國民中學生涯及技藝教育資源網";
+const SITE_NAME = "臺南市國民中學生涯及技藝教育資源網";
 
 // 卡片資料陣列
 const cardsData = [

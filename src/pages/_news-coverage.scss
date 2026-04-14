@@ -1,0 +1,841 @@
+// ==========================================================================
+// 新聞露出頁面樣式 — BEM 命名，對應 _variables.scss token
+// ==========================================================================
+
+// --- 色彩 Token (對應 _variables.scss) ---
+$nc-primary: #0d417a; // $primary-500
+$nc-primary-dark: #0a2f5a;
+$nc-accent: #3188c8; // $nav-news-color
+$nc-orange: #ea7d1a; // $secondary
+$nc-bg: #fbf8ef; // body bg
+$nc-bg-alt: #f1f4f8;
+$nc-text: #212529; // $gray-900
+$nc-muted: #6c757d; // $gray-600
+$nc-white: #ffffff;
+
+// 媒體類型顏色
+$nc-tv-color: #3188c8;
+$nc-paper-color: #4caf50;
+$nc-online-color: #20c997;
+
+// ==========================================================================
+// 共用區塊標題
+// ==========================================================================
+
+.nc-section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 2rem;
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: $nc-orange;
+    color: $nc-white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 4px;
+  }
+
+  &__line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, $nc-accent, transparent);
+    border-radius: 2px;
+  }
+
+  h2 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 800;
+    color: $nc-primary;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+}
+
+// ==========================================================================
+// 第一區塊 — 頁面橫幅
+// ==========================================================================
+
+.nc-hero {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    $nc-primary 0%,
+    #1a5fa8 55%,
+    $nc-accent 100%
+  );
+  overflow: hidden;
+  padding: 5rem 0 0;
+
+  // 裝飾性背景圓形
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+  &::before {
+    width: 600px;
+    height: 600px;
+    top: -200px;
+    right: -100px;
+    background: rgba($nc-white, 0.04);
+  }
+  &::after {
+    width: 300px;
+    height: 300px;
+    bottom: 60px;
+    left: -60px;
+    background: rgba($nc-white, 0.04);
+  }
+
+  // 麵包屑
+  &__breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: rgba($nc-white, 0.65);
+    margin-bottom: 1.5rem;
+
+    a {
+      color: rgba($nc-white, 0.65);
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover {
+        color: $nc-white;
+      }
+    }
+
+    i {
+      font-size: 0.7rem;
+    }
+  }
+
+  // 橘色 accent bar + 主標題
+  &__title-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 1.25rem;
+  }
+
+  &__accent-bar {
+    flex-shrink: 0;
+    width: 5px;
+    height: 64px;
+    background: linear-gradient(to bottom, $nc-orange, darken($nc-orange, 15%));
+    border-radius: 3px;
+    margin-top: 4px;
+  }
+
+  &__title {
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    color: $nc-white;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin: 0;
+
+    span {
+      display: block;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: rgba($nc-white, 0.75);
+      margin-bottom: 4px;
+    }
+  }
+
+  &__desc {
+    color: rgba($nc-white, 0.8);
+    font-size: clamp(0.95rem, 1.5vw, 1.1rem);
+    line-height: 1.7;
+    max-width: 480px;
+    margin-bottom: 2rem;
+  }
+
+  // Stats 玻璃態卡片群
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 0.5rem;
+
+    @media (max-width: 991px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+    }
+  }
+
+  &__stat-card {
+    background: rgba($nc-white, 0.1);
+    border: 1px solid rgba($nc-white, 0.2);
+    border-radius: 16px;
+    padding: 1.25rem 1.5rem;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition:
+      background 0.3s,
+      transform 0.3s;
+
+    &:hover {
+      background: rgba($nc-white, 0.16);
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 991px) {
+      flex: 1 1 calc(33% - 0.67rem);
+      min-width: 120px;
+    }
+  }
+
+  &__stat-icon {
+    font-size: 1.5rem;
+    color: $nc-orange;
+    margin-bottom: 0.5rem;
+  }
+
+  &__stat-num {
+    font-size: 2rem;
+    font-weight: 900;
+    color: $nc-white;
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+
+  &__stat-label {
+    font-size: 0.8rem;
+    color: rgba($nc-white, 0.7);
+    letter-spacing: 0.04em;
+  }
+
+  // SVG Wave 分隔
+  &__wave {
+    display: block;
+    width: 100%;
+    margin-bottom: -2px;
+  }
+}
+
+// ==========================================================================
+// 第二區塊 — 精選報導
+// ==========================================================================
+
+.nc-featured {
+  padding: 5rem 0;
+  background: $nc-bg;
+
+  // 主報導大卡
+  &__main-card {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba($nc-primary, 0.12);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: $nc-white;
+    transition: box-shadow 0.3s;
+
+    &:hover {
+      box-shadow: 0 16px 48px rgba($nc-primary, 0.18);
+    }
+  }
+
+  &__main-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(
+      135deg,
+      $nc-primary 0%,
+      #1a5fa8 50%,
+      $nc-accent 100%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    i {
+      font-size: 4rem;
+      color: rgba($nc-white, 0.25);
+    }
+  }
+
+  &__main-source-badge {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: $nc-orange;
+    color: $nc-white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+  }
+
+  &__main-date-badge {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    background: rgba($nc-primary, 0.85);
+    color: rgba($nc-white, 0.9);
+    font-size: 0.78rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+
+  &__main-body {
+    padding: 1.75rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__main-category {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: $nc-accent;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  &__main-title {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 800;
+    color: $nc-text;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    flex: 1;
+  }
+
+  &__main-excerpt {
+    color: $nc-muted;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__main-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: $nc-primary;
+    color: $nc-white;
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition:
+      background 0.25s,
+      transform 0.2s;
+    align-self: flex-start;
+
+    &:hover {
+      background: $nc-accent;
+      color: $nc-white;
+      transform: translateX(3px);
+    }
+
+    i {
+      transition: transform 0.2s;
+    }
+    &:hover i {
+      transform: translateX(4px);
+    }
+  }
+
+  // 側欄快訊
+  &__sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__sidebar-header {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: $nc-primary;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid $nc-accent;
+    margin-bottom: 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    i {
+      color: $nc-orange;
+    }
+  }
+
+  &__sidebar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  &__sidebar-item {
+    padding: 1rem 0 1rem 1rem;
+    border-left: 3px solid $nc-tv-color;
+    border-bottom: 1px solid rgba($nc-primary, 0.07);
+    transition:
+      border-color 0.2s,
+      background 0.2s;
+    cursor: pointer;
+
+    &--tv {
+      border-left-color: $nc-tv-color;
+    }
+    &--paper {
+      border-left-color: $nc-paper-color;
+    }
+    &--online {
+      border-left-color: $nc-online-color;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background: rgba($nc-accent, 0.04);
+    }
+  }
+
+  &__sidebar-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  &__sidebar-source {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: $nc-accent;
+    letter-spacing: 0.04em;
+  }
+
+  &__sidebar-date {
+    font-size: 0.72rem;
+    color: $nc-muted;
+  }
+
+  &__sidebar-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: $nc-text;
+    line-height: 1.45;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__sidebar-cta {
+    text-align: center;
+    padding-top: 1.25rem;
+
+    a {
+      color: $nc-accent;
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+
+      &:hover {
+        gap: 10px;
+      }
+    }
+  }
+}
+
+// ==========================================================================
+// 第三區塊 — 媒體報導瀏覽
+// ==========================================================================
+
+.nc-grid-section {
+  padding: 5rem 0;
+  background: $nc-bg-alt;
+
+  // Filters
+  &__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 2.5rem;
+  }
+
+  &__filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    border: 2px solid rgba($nc-primary, 0.2);
+    background: $nc-white;
+    color: $nc-muted;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+
+    &:hover {
+      border-color: $nc-accent;
+      color: $nc-accent;
+    }
+
+    &.is-active {
+      background: $nc-primary;
+      border-color: $nc-primary;
+      color: $nc-white;
+      box-shadow: 0 4px 12px rgba($nc-primary, 0.3);
+    }
+  }
+
+  // Card Grid
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 1.5rem;
+  }
+
+  // 單張報導卡片
+  &__card {
+    background: $nc-white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba($nc-primary, 0.07);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 32px rgba($nc-primary, 0.14);
+    }
+  }
+
+  &__card-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    i {
+      font-size: 2.5rem;
+      color: rgba($nc-white, 0.3);
+    }
+
+    &--tv {
+      background: linear-gradient(135deg, #1a5fa8, $nc-tv-color);
+    }
+    &--paper {
+      background: linear-gradient(135deg, #1b6e3d, #4caf50);
+    }
+    &--online {
+      background: linear-gradient(135deg, #0f5447, $nc-online-color);
+    }
+  }
+
+  &__card-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.04em;
+
+    &--tv {
+      background: $nc-tv-color;
+      color: $nc-white;
+    }
+    &--paper {
+      background: $nc-paper-color;
+      color: $nc-white;
+    }
+    &--online {
+      background: $nc-online-color;
+      color: $nc-white;
+    }
+  }
+
+  &__card-body {
+    padding: 1.25rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__card-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.6rem;
+  }
+
+  &__card-source {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: $nc-accent;
+    letter-spacing: 0.04em;
+  }
+
+  &__card-date {
+    font-size: 0.72rem;
+    color: $nc-muted;
+  }
+
+  &__card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $nc-text;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__card-excerpt {
+    font-size: 0.85rem;
+    color: $nc-muted;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__card-link {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: $nc-accent;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.2s;
+    align-self: flex-start;
+
+    &:hover {
+      gap: 9px;
+      color: $nc-accent;
+    }
+  }
+}
+
+// ==========================================================================
+// 第四區塊 — 影音報導
+// ==========================================================================
+
+.nc-video {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, $nc-primary 0%, $nc-primary-dark 100%);
+  position: relative;
+  overflow: hidden;
+
+  // 裝飾圓形
+  &::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: -200px;
+    right: -100px;
+    border-radius: 50%;
+    background: rgba($nc-white, 0.03);
+  }
+
+  // 標題區 (白色模式)
+  .nc-section-heading {
+    h2 {
+      color: $nc-white;
+    }
+    &__line {
+      background: linear-gradient(to right, rgba($nc-white, 0.4), transparent);
+    }
+  }
+
+  // 卡片
+  &__card {
+    background: rgba($nc-white, 0.07);
+    border: 1px solid rgba($nc-white, 0.12);
+    border-radius: 20px;
+    overflow: hidden;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s,
+      background 0.3s;
+
+    &:hover {
+      transform: translateY(-6px);
+      background: rgba($nc-white, 0.12);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(
+      135deg,
+      rgba($nc-white, 0.05),
+      rgba($nc-white, 0.12)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    &:hover .nc-video__play-btn {
+      transform: translate(-50%, -50%) scale(1.12);
+      background: $nc-orange;
+    }
+  }
+
+  &__play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    background: rgba($nc-white, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:
+      transform 0.25s,
+      background 0.25s;
+    z-index: 1;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+
+    i {
+      font-size: 1.3rem;
+      color: $nc-primary;
+      margin-left: 3px; // play icon 視覺校正
+    }
+  }
+
+  &__duration {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    background: rgba(0, 0, 0, 0.7);
+    color: $nc-white;
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+  }
+
+  &__body {
+    padding: 1.25rem 1.5rem 1.5rem;
+  }
+
+  &__source {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: $nc-orange;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    i {
+      font-size: 0.8rem;
+    }
+  }
+
+  &__date {
+    font-size: 0.72rem;
+    color: rgba($nc-white, 0.5);
+    margin-bottom: 0.6rem;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: $nc-white;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  &__cta-row {
+    text-align: center;
+    padding-top: 3rem;
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba($nc-white, 0.1);
+      border: 2px solid rgba($nc-white, 0.35);
+      color: $nc-white;
+      text-decoration: none;
+      padding: 12px 28px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition:
+        background 0.25s,
+        border-color 0.25s;
+
+      &:hover {
+        background: $nc-orange;
+        border-color: $nc-orange;
+      }
+    }
+  }
+}
