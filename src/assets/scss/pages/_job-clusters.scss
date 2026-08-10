@@ -1,0 +1,109 @@
+.job-clusters {
+  &__title {
+    position: relative;
+    padding-bottom: 12px;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #3278b2;
+    }
+  }
+
+  &__category-title {
+    font-weight: 700;
+  }
+
+  &__intro-card,
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      border-color: #3278b2;
+    }
+  }
+
+  &__intro-card {
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  &__intro-name {
+    padding: 16px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: left;
+    color: #333;
+  }
+
+  &__card-name {
+    padding: 10px 12px;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+  }
+
+  &__thumb {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #000;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__thumb-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  &__modal {
+    z-index: 1055;
+  }
+
+  &__player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}

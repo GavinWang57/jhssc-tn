@@ -1,0 +1,113 @@
+{
+  "114": [
+    {
+      "cluster": "食品",
+      "partnerSchool": "光華高中",
+      "hostSchools": "大成國中、永康國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "慈幼工商",
+      "hostSchools": "建興國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "南英商工",
+      "hostSchools": "新興國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "自辦式",
+      "hostSchools": "安定國中、佳里國中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "敏惠醫專",
+      "hostSchools": "南新國中、新東國中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "樹人醫專",
+      "hostSchools": "南寧高中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "中華醫事科大",
+      "hostSchools": "仁德國中、崇明國中、忠孝國中"
+    }
+  ],
+  "113": [
+    {
+      "cluster": "食品",
+      "partnerSchool": "光華高中",
+      "hostSchools": "大成國中、永康國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "慈幼工商",
+      "hostSchools": "建興國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "南英商工",
+      "hostSchools": "新興國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "自辦式",
+      "hostSchools": "安定國中、佳里國中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "敏惠醫專",
+      "hostSchools": "南新國中、新東國中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "樹人醫專",
+      "hostSchools": "南寧高中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "中華醫事科大",
+      "hostSchools": "仁德國中、崇明國中、忠孝國中"
+    }
+  ],
+  "112": [
+    {
+      "cluster": "食品",
+      "partnerSchool": "光華高中",
+      "hostSchools": "大成國中、永康國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "慈幼工商",
+      "hostSchools": "建興國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "南英商工",
+      "hostSchools": "新興國中"
+    },
+    {
+      "cluster": "食品",
+      "partnerSchool": "自辦式",
+      "hostSchools": "安定國中、佳里國中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "敏惠醫專",
+      "hostSchools": "南新國中、新東國中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "樹人醫專",
+      "hostSchools": "南寧高中"
+    },
+    {
+      "cluster": "醫護",
+      "partnerSchool": "中華醫事科大",
+      "hostSchools": "仁德國中、崇明國中、忠孝國中"
+    }
+  ]
+}
