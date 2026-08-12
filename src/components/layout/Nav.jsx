@@ -13,11 +13,11 @@ function Nav() {
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img
             src="images/logo-nav.png"
-            alt="台南市生涯及技藝教育資源網"
+            alt="臺南市生涯及技藝教育資源網"
             className="me-2"
           />
           {/* <span className="fs-4 fw-bold text-neutral-100">
-            台南市國民中學
+            臺南市國民中學
             <br />
             生涯及技藝教育資源網
           </span> */}

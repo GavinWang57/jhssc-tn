@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import "../assets/scss/pages/_job-clusters.scss";
 import jobClusterCategories, { comprehensiveIntro } from "../data/jobClusters";
 
-const SITE_NAME = "台南市國民中學生涯及技藝教育資源網";
+const SITE_NAME = "臺南市國民中學生涯及技藝教育資源網";
 
 function VideoThumbnail({ videoId }) {
   return (

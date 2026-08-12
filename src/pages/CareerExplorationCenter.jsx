@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import "../assets/scss/pages/_career-exploration-center.scss";
 import careerExplorationCenters from "../data/careerExplorationCenters.json";
 
-const SITE_NAME = "台南市國民中學生涯及技藝教育資源網";
+const SITE_NAME = "臺南市國民中學生涯及技藝教育資源網";
 
 function CareerExplorationCenter() {
   return (

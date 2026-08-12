@@ -11,14 +11,14 @@ function Footer() {
           <div className="col-md-2 mb-2 text-center text-md-start">
             <img
               src="images/logo-nav.png"
-              alt="台南市生涯及技藝教育資源網"
+              alt="臺南市生涯及技藝教育資源網"
               height="75"
               className="mb-0"
             />
           </div>
           <div className="row col-md-10 text-center text-md-start">
             <div className="col-md-4">
-              <div className="mb-3">主辦單位：台南市政府教育局</div>
+              <div className="mb-3">主辦單位：臺南市政府教育局</div>
               <div className="mb-1">708201臺南市永華路二段6號7樓</div>
             </div>
             <div className="col-md-4 mb-1">
@@ -39,7 +39,7 @@ function Footer() {
                   其它連結
                 </Link>
               </div>
-              <p className="mb-0">© {currentYear} 台南市政府教育局 版權所有</p>
+              <p className="mb-0">© {currentYear} 臺南市政府教育局 版權所有</p>
             </div>
           </div>
         </div>

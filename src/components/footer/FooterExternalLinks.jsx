@@ -18,8 +18,8 @@ function FooterExternalLinks() {
       url: "https://www.techadmi.edu.tw/manual.php",
     },
     { name: "技專校院招生委員會聯合會", url: "https://www.jctv.ntut.edu.tw/" },
-    { name: "台南市政府", url: "https://www.tainan.gov.tw/" },
-    { name: "台南市政府教育局", url: "https://www.tn.edu.tw/" },
+    { name: "臺南市政府", url: "https://www.tainan.gov.tw/" },
+    { name: "臺南市政府教育局", url: "https://www.tn.edu.tw/" },
   ];
 
   return (

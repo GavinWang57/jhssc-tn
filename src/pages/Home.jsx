@@ -3,7 +3,7 @@ import "../assets/scss/pages/_home.scss";
 import Banner from "../components/home/Banner";
 import Card from "../components/home/Card";
 
-const SITE_NAME = "台南市國民中學生涯及技藝教育資源網";
+const SITE_NAME = "臺南市國民中學生涯及技藝教育資源網";
 
 // 卡片資料陣列
 const cardsData = [
@@ -20,7 +20,7 @@ const cardsData = [
     id: 2,
     icon: "images/home/2.png",
     title: "技藝教育",
-    description: "提供台南市國中技藝教育課程、競賽及成果資訊，發掘學生潛能。",
+    description: "提供臺南市國中技藝教育課程、競賽及成果資訊，發掘學生潛能。",
     buttonText: "【深入了解】",
     link: "/skills-education",
     color: "#B565D8",

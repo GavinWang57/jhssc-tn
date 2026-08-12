@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet-async";
 import "../assets/scss/pages/_skills-education.scss";
 import skillsEducationCourses from "../data/skillsEducationCourses.json";
 
-const SITE_NAME = "台南市國民中學生涯及技藝教育資源網";
+const SITE_NAME = "臺南市國民中學生涯及技藝教育資源網";
 
 const JOB_CLUSTERS = [
   "機械職群",

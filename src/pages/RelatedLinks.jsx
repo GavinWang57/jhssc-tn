@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import "../assets/scss/pages/_related-links.scss";
 import relatedLinks from "../data/relatedLinks";
 
-const SITE_NAME = "台南市國民中學生涯及技藝教育資源網";
+const SITE_NAME = "臺南市國民中學生涯及技藝教育資源網";
 
 function RelatedLinks() {
   return (
