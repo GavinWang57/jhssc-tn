@@ -1,0 +1,287 @@
+{
+  "sections": [
+    {
+      "id": "visit-locations",
+      "title": "產(企)業/觀光工廠參訪地點建議參考名單",
+      "layout": "file",
+      "icon": "bi-file-earmark-pdf-fill",
+      "resource": {
+        "type": "pdf",
+        "name": "產(企)業/觀光工廠參訪地點建議參考名單",
+        "note": "PDF・1份，每年更新",
+        "fileId": "1a5V4Mvex27BsaaO7VXYYwVid9cb2Xswl"
+      }
+    },
+    {
+      "id": "speaker-list",
+      "title": "職涯宣講人員建議參考名單",
+      "layout": "file",
+      "icon": "bi-file-earmark-pdf-fill",
+      "resource": {
+        "type": "pdf",
+        "name": "職涯宣講人員建議參考名單",
+        "note": "PDF・1份，每年更新",
+        "fileId": "1krWADJ4YS9yk0hTXqWJg-WGERmDGR0k9"
+      }
+    },
+    {
+      "id": "comics",
+      "title": "職群漫畫",
+      "layout": "grid",
+      "items": [
+        {
+          "type": "comic",
+          "name": "家政群漫畫",
+          "thumb": "home-economics-00.jpg",
+          "images": [
+            "home-economics-01.jpg",
+            "home-economics-02.jpg",
+            "home-economics-03.jpg",
+            "home-economics-04.jpg",
+            "home-economics-05.jpg",
+            "home-economics-06.jpg",
+            "home-economics-07.jpg",
+            "home-economics-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "電子與電機群漫畫",
+          "thumb": "electronics-electrical-00.jpg",
+          "images": [
+            "electronics-electrical-01.jpg",
+            "electronics-electrical-02.jpg",
+            "electronics-electrical-03.jpg",
+            "electronics-electrical-04.jpg",
+            "electronics-electrical-05.jpg",
+            "electronics-electrical-06.jpg",
+            "electronics-electrical-07.jpg",
+            "electronics-electrical-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "藝術群漫畫",
+          "thumb": "arts-00.jpg",
+          "images": [
+            "arts-01.jpg",
+            "arts-02.jpg",
+            "arts-03.jpg",
+            "arts-04.jpg",
+            "arts-05.jpg",
+            "arts-06.jpg",
+            "arts-07.jpg",
+            "arts-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "醫護群漫畫",
+          "thumb": "health-care-00.jpg",
+          "images": [
+            "health-care-01.jpg",
+            "health-care-02.jpg",
+            "health-care-03.jpg",
+            "health-care-04.jpg",
+            "health-care-05.jpg",
+            "health-care-06.jpg",
+            "health-care-07.jpg",
+            "health-care-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "動力機械群漫畫",
+          "thumb": "power-mechanical-00.jpg",
+          "images": [
+            "power-mechanical-01.png",
+            "power-mechanical-02.png",
+            "power-mechanical-03.png",
+            "power-mechanical-04.png",
+            "power-mechanical-05.png",
+            "power-mechanical-06.png",
+            "power-mechanical-07.png",
+            "power-mechanical-08.png"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "商管群漫畫",
+          "thumb": "business-management-00.jpg",
+          "images": [
+            "business-management-01.png",
+            "business-management-02.png",
+            "business-management-03.png",
+            "business-management-04.png",
+            "business-management-05.png",
+            "business-management-06.png",
+            "business-management-07.png",
+            "business-management-08.png"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "化工群漫畫",
+          "thumb": "chemical-engineering-00.jpg",
+          "images": [
+            "chemical-engineering-01.png",
+            "chemical-engineering-02.png",
+            "chemical-engineering-03.png",
+            "chemical-engineering-04.png",
+            "chemical-engineering-05.png",
+            "chemical-engineering-06.png",
+            "chemical-engineering-07.png",
+            "chemical-engineering-08.png"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "機械群漫畫",
+          "thumb": "mechanical-00.jpg",
+          "images": [
+            "mechanical-01.png",
+            "mechanical-02.png",
+            "mechanical-03.png",
+            "mechanical-04.png",
+            "mechanical-05.png",
+            "mechanical-06.png",
+            "mechanical-07.png",
+            "mechanical-08.png"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "海事群漫畫",
+          "thumb": "maritime-00.jpg",
+          "images": [
+            "maritime-01.jpg",
+            "maritime-02.jpg",
+            "maritime-03.jpg",
+            "maritime-04.jpg",
+            "maritime-05.jpg",
+            "maritime-06.jpg",
+            "maritime-07.jpg",
+            "maritime-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "水產群漫畫",
+          "thumb": "fisheries-00.jpg",
+          "images": [
+            "fisheries-01.jpg",
+            "fisheries-02.jpg",
+            "fisheries-03.jpg",
+            "fisheries-04.jpg",
+            "fisheries-05.jpg",
+            "fisheries-06.jpg",
+            "fisheries-07.jpg",
+            "fisheries-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "外語群漫畫",
+          "thumb": "foreign-language-00.jpg",
+          "images": [
+            "foreign-language-01.jpg",
+            "foreign-language-02.jpg",
+            "foreign-language-03.jpg",
+            "foreign-language-04.jpg",
+            "foreign-language-05.jpg",
+            "foreign-language-06.jpg",
+            "foreign-language-07.jpg",
+            "foreign-language-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "餐旅群漫畫",
+          "thumb": "hospitality-tourism-00.jpg",
+          "images": [
+            "hospitality-tourism-01.jpg",
+            "hospitality-tourism-02.jpg",
+            "hospitality-tourism-03.jpg",
+            "hospitality-tourism-04.jpg",
+            "hospitality-tourism-05.jpg",
+            "hospitality-tourism-06.jpg",
+            "hospitality-tourism-07.jpg",
+            "hospitality-tourism-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "農業群漫畫",
+          "thumb": "agriculture-00.jpg",
+          "images": [
+            "agriculture-01.jpg",
+            "agriculture-02.jpg",
+            "agriculture-03.jpg",
+            "agriculture-04.jpg",
+            "agriculture-05.jpg",
+            "agriculture-06.jpg",
+            "agriculture-07.jpg",
+            "agriculture-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "設計群漫畫",
+          "thumb": "design-00.jpg",
+          "images": [
+            "design-01.jpg",
+            "design-02.jpg",
+            "design-03.jpg",
+            "design-04.jpg",
+            "design-05.jpg",
+            "design-06.jpg",
+            "design-07.jpg",
+            "design-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "食品群漫畫",
+          "thumb": "food-00.jpg",
+          "images": [
+            "food-01.jpg",
+            "food-02.jpg",
+            "food-03.jpg",
+            "food-04.jpg",
+            "food-05.jpg",
+            "food-06.jpg",
+            "food-07.jpg",
+            "food-08.jpg"
+          ]
+        },
+        {
+          "type": "comic",
+          "name": "土木與建築群漫畫",
+          "thumb": "civil-construction-00.jpg",
+          "images": [
+            "civil-construction-01.jpg",
+            "civil-construction-02.jpg",
+            "civil-construction-03.jpg",
+            "civil-construction-04.jpg",
+            "civil-construction-05.jpg",
+            "civil-construction-06.jpg",
+            "civil-construction-07.jpg",
+            "civil-construction-08.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "animation",
+      "title": "職涯探索宣導動畫",
+      "layout": "file",
+      "icon": "bi-film",
+      "resource": {
+        "type": "video",
+        "name": "職涯探索宣導動畫",
+        "note": "影片・1部",
+        "videoId": "6N7r_olCrio"
+      }
+    }
+  ]
+}

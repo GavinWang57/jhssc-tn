@@ -1,0 +1,214 @@
+.other-resources {
+  &__title {
+    position: relative;
+    padding-bottom: 12px;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #8d969c;
+    }
+  }
+
+  &__section-title {
+    font-weight: 700;
+  }
+
+  &__section-note {
+    font-size: 14px;
+    color: #888888;
+  }
+
+  // 單一檔案資源（名單 PDF、宣導動畫）：橫式卡片
+  &__file-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    padding: 16px 20px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease,
+      border-color 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      border-color: #8d969c;
+    }
+  }
+
+  &__file-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    color: #8d969c;
+    background-color: rgba(141, 150, 156, 0.12);
+    border-radius: 50%;
+  }
+
+  &__file-body {
+    flex-grow: 1;
+    min-width: 0;
+  }
+
+  &__file-name {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  &__file-note {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #888888;
+  }
+
+  &__file-arrow {
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #999999;
+  }
+
+  // 職群漫畫格狀卡片
+  &__card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+
+    &:hover &-cta {
+      color: #ffffff;
+      background-color: #8d969c;
+    }
+  }
+
+  &__card-thumb {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    overflow: hidden;
+    background-color: #f2f2f2;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 12px 12px;
+  }
+
+  &__card-name {
+    font-size: 14px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  &__card-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 5px 0;
+    margin-top: auto;
+    font-size: 12px;
+    font-weight: 700;
+    color: #8d969c;
+    background-color: rgba(141, 150, 156, 0.12);
+    border-radius: 999px;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  &__modal {
+    z-index: 1055;
+  }
+
+  &__player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+
+  &__pdf-frame {
+    width: 100%;
+    height: 75vh;
+    border: 0;
+  }
+
+  &__comic-scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 75vh;
+    padding: 12px;
+    overflow-y: auto;
+    background-color: #f2f2f2;
+
+    img {
+      max-width: 100%;
+      margin-bottom: 8px;
+      border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    img:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
