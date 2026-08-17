@@ -1,0 +1,256 @@
+.vocational-expo {
+  &__title {
+    position: relative;
+    padding-bottom: 12px;
+    font-weight: 700;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 60px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #7ac150;
+    }
+  }
+
+  &__section-title {
+    font-weight: 700;
+  }
+
+  // 年度分頁頁籤 + 固定寬高卡片格（技職達人/宣傳影片/宣導成果手冊共用）
+  &__year-tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 8px;
+    margin-bottom: 20px;
+    overflow-x: auto;
+  }
+
+  &__year-tab {
+    flex-shrink: 0;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #7ac150;
+    background-color: #ffffff;
+    border: 1px solid #7ac150;
+    border-radius: 999px;
+    cursor: pointer;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+
+    &:hover {
+      background-color: rgba(122, 193, 80, 0.1);
+    }
+
+    &--active {
+      color: #ffffff;
+      background-color: #7ac150;
+
+      &:hover {
+        background-color: #7ac150;
+      }
+    }
+  }
+
+  &__card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+
+    &:hover {
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+      transform: translateY(-2px);
+    }
+
+    &:hover &-cta {
+      color: #ffffff;
+      background-color: #7ac150;
+    }
+  }
+
+  &__card-thumb {
+    position: relative;
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background-color: #eef4e7;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-thumb-fallback {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: #7ac150;
+    background-color: #eef4e7;
+
+    i {
+      font-size: 32px;
+    }
+  }
+
+  &__card-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+
+    i {
+      margin-left: 2px;
+      font-size: 20px;
+    }
+  }
+
+  &__card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 14px 14px;
+  }
+
+  &__card-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: #222222;
+  }
+
+  &__card-sub {
+    display: -webkit-box;
+    min-height: 2.6em;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.3;
+    color: #888888;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  &__card-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 6px 0;
+    margin-top: auto;
+    font-size: 13px;
+    font-weight: 700;
+    color: #7ac150;
+    background-color: rgba(122, 193, 80, 0.1);
+    border-radius: 999px;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+  }
+
+  &__card--pdf {
+    cursor: default;
+  }
+
+  &__card-thumb--pdf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 48px;
+      color: #7ac150;
+    }
+  }
+
+  &__card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+  }
+
+  &__card-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    gap: 6px;
+    padding: 6px 0;
+    font-size: 13px;
+    font-weight: 700;
+    border: 1px solid #7ac150;
+    border-radius: 999px;
+    cursor: pointer;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
+
+    &--primary {
+      color: #ffffff;
+      background-color: #7ac150;
+
+      &:hover {
+        background-color: #68a643;
+      }
+    }
+
+    &--outline {
+      color: #7ac150;
+      background-color: #ffffff;
+
+      &:hover {
+        background-color: rgba(122, 193, 80, 0.1);
+      }
+    }
+  }
+
+  &__modal {
+    z-index: 1055;
+  }
+
+  &__player {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  }
+}

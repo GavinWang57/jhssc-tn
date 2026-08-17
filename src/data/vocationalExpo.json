@@ -1,0 +1,110 @@
+{
+  "speakerTalks": [
+    {
+      "year": 114,
+      "speaker": "蔡柏毅",
+      "provider": "drive",
+      "fileId": "1zuTzRMgnWGkgDv6w9WQMYCo5NMgT33od"
+    },
+    {
+      "year": 114,
+      "speaker": "水管阿民",
+      "provider": "drive",
+      "fileId": "16SJpGqhlJd78jhmrsSZXQQmIdCWA2KxM"
+    },
+    {
+      "year": 113,
+      "speaker": "陳詩婷",
+      "title": "國際技能競賽服裝創作世界金牌",
+      "provider": "youtube",
+      "videoId": "7-58R935LGc"
+    },
+    {
+      "year": 113,
+      "speaker": "楊薀蒂",
+      "title": "國際技能競賽美髮國手銅牌",
+      "provider": "youtube",
+      "videoId": "LzSF6NPTz6A"
+    },
+    {
+      "year": 112,
+      "speaker": "黃于芳",
+      "title": "樹人醫護管理專科學校職能治療科助理教授",
+      "provider": "youtube",
+      "videoId": "Sni5VMr8Y4A"
+    },
+    {
+      "year": 112,
+      "speaker": "陳昱彰",
+      "title": "學學文創攝影課程講師",
+      "provider": "youtube",
+      "videoId": "1QULwcaP9To"
+    },
+    {
+      "year": 111,
+      "speaker": "王秋萍",
+      "title": "節能永續",
+      "provider": "youtube",
+      "videoId": "QVjUkQcWTa8"
+    },
+    {
+      "year": 110,
+      "speaker": "林元笠",
+      "title": "三晶能源科技負責人",
+      "provider": "youtube",
+      "videoId": "NUiLRHa3i2g"
+    },
+    {
+      "year": 110,
+      "speaker": "施伯鋒",
+      "title": "安平平安創意科技執行長",
+      "provider": "youtube",
+      "videoId": "u3grCFEDVl0"
+    }
+  ],
+  "promoVideos": [
+    { "year": 114, "name": "114技職教育宣傳影片", "videoId": "HEEOP2wBvV0" },
+    { "year": 113, "name": "113技職教育宣傳影片", "videoId": "V45egfb2rcI" },
+    { "year": 112, "name": "112技職教育宣傳影片", "videoId": "ROXvaK8IqV8" },
+    { "year": 111, "name": "111技職教育宣傳影片", "videoId": "dwL0eprBSx4" },
+    { "year": 110, "name": "110技職教育宣傳影片", "videoId": "0uP8D6hl2Tc" },
+    { "year": 109, "name": "109技職教育宣傳影片", "videoId": "HdnhitexZzA" }
+  ],
+  "handbooks": [
+    {
+      "year": 114,
+      "name": "114年度國中技職教育宣導成果手冊",
+      "fileId": "1ozSk5LdexulpnY2PyGkLdULhS2JiEyiN"
+    },
+    {
+      "year": 113,
+      "name": "113年度國中技職教育宣導成果手冊",
+      "fileId": "1SOaImWyn2ElskKg_34A2cvDTQkakN7yn"
+    },
+    {
+      "year": 112,
+      "name": "112年度國中技職教育宣導成果手冊",
+      "fileId": "1XtcGko3UGz1yilIMMeugZU8aDKSQ9SIG"
+    },
+    {
+      "year": 111,
+      "name": "111年度國中技職教育宣導成果手冊",
+      "fileId": "1nmRiZ7IWJE4eFc5kpEISmwCMcJO0B8F8"
+    },
+    {
+      "year": 110,
+      "name": "110年度國中技職教育宣導成果手冊",
+      "fileId": "1ytzKLMmjh2iNwuUn3pxIHW6sqlvqDetx"
+    },
+    {
+      "year": 109,
+      "name": "109年度國中技職教育宣導成果手冊(上)",
+      "fileId": "1TZIaD39Kk1nlFsiCo7z1lZAhxQc1ghM3"
+    },
+    {
+      "year": 109,
+      "name": "109年度國中技職教育宣導成果手冊(下)",
+      "fileId": "1Gbiq7BVpXyp1A_rzLEGKt8IB-HpqjdHG"
+    }
+  ]
+}
