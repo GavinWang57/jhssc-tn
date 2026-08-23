@@ -1,4 +1,16 @@
 .related-links {
+  &__header {
+    position: relative;
+    padding: 12px 0;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: min(560px, 55%) auto;
+
+    @media (max-width: 767.98px) {
+      background-image: none !important;
+    }
+  }
+
   &__title {
     position: relative;
     padding-bottom: 12px;
@@ -16,49 +28,64 @@
     }
   }
 
+  &__subtitle {
+    color: #6b7684;
+    line-height: 1.7;
+  }
+
   &__item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     height: 100%;
-    padding: 16px 20px;
+    padding: 24px 28px;
     background-color: #ffffff;
     border: 2px solid transparent;
-    border-radius: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     color: #333;
     text-decoration: none;
     transition:
       transform 0.3s ease,
       box-shadow 0.3s ease,
-      border-color 0.3s ease,
-      color 0.3s ease;
+      border-color 0.3s ease;
 
     &:hover {
       transform: translateY(-4px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
       border-color: #3278b2;
-      color: #3278b2;
       text-decoration: none;
     }
   }
 
   &__icon {
     flex-shrink: 0;
-    width: 24px;
-    height: 24px;
+    width: 56px;
+    height: 56px;
     object-fit: contain;
   }
 
-  &__name {
+  &__content {
     flex-grow: 1;
+    min-width: 0;
+  }
+
+  &__name {
+    display: block;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
+    color: #1a3a5c;
+  }
+
+  &__desc {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #6b7684;
   }
 
   &__arrow {
     flex-shrink: 0;
-    font-size: 14px;
-    color: #999;
+    font-size: 18px;
+    color: #3278b2;
   }
 }

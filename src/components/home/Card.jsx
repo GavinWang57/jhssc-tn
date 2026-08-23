@@ -3,7 +3,7 @@ import "./_card.scss";
 
 const Card = ({ icon, title, description, buttonText, link, color }) => {
   return (
-    <div className="custom-card" style={{ backgroundColor: color }}>
+    <Link to={link} className="custom-card" style={{ backgroundColor: color }}>
       {/* 頂部顏色區域的間距 (控制色條粗細) */}
       <div className="custom-card__top-bar"></div>
 
@@ -20,16 +20,12 @@ const Card = ({ icon, title, description, buttonText, link, color }) => {
         {/* 卡片描述 */}
         <p className="custom-card__description">{description}</p>
 
-        {/* 按鈕連結 */}
-        <Link
-          to={link}
-          className="custom-card__button"
-          style={{ color: color }}
-        >
+        {/* 按鈕樣式文字 (整張卡片皆可點擊) */}
+        <span className="custom-card__button" style={{ color: color }}>
           {buttonText}
-        </Link>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 };
 

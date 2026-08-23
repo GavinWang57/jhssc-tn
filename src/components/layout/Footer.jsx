@@ -34,12 +34,12 @@ function Footer() {
               </div>
             </div>
             <div className="col-md-4">
-              <div>
-                <Link to="/related-links" className="text-neutral-100 mb-1">
+              <div className="mb-1">
+                <Link to="/related-links" className="text-neutral-100">
                   其它連結
                 </Link>
               </div>
-              <p className="mb-0">© {currentYear} 臺南市政府教育局 版權所有</p>
+              <div>© {currentYear} 臺南市政府教育局 版權所有</div>
             </div>
           </div>
         </div>
