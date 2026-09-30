@@ -22,15 +22,9 @@ function Footer() {
               <div className="mb-1">708201臺南市永華路二段6號7樓</div>
             </div>
             <div className="col-md-4 mb-1">
-              <div className="mb-1">聯絡電話：(06) 2991111</div>
+              <div className="mb-1">聯絡電話：(06) 2991111#1245</div>
               <div className="mb-1">
-                電子郵件：
-                <a
-                  href="mailto:example@example.com"
-                  className="text-neutral-100"
-                >
-                  example@example.com
-                </a>
+               
               </div>
             </div>
             <div className="col-md-4">
